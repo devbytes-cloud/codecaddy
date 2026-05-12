@@ -1,0 +1,94 @@
+name: 🐛 Bug Report
+description: Report a bug in CodeCaddy
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. The fields below help us reproduce and fix the issue.
+        
+        **Not a bug?** For questions, ideas, or general discussion, please use [Discussions](https://github.com/devbytes-cloud/codecaddy/discussions) instead.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear description of the bug.
+      placeholder: When I click Save on a snippet with multiple tags, the page freezes and the snippet isn't saved.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps to reproduce the bug.
+      placeholder: |
+        1. Open app.codecaddy.dev
+        2. Click "New snippet"
+        3. Add three tags
+        4. Click Save
+        5. Observe page freeze
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs. actual behavior
+      description: What did you expect to happen, and what actually happened?
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: "Chrome 138, Firefox 145, Safari 18, Arc 1.5"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "macOS 15.3, Windows 11, Ubuntu 24.04"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: snippet-source
+    attributes:
+      label: Snippet source
+      description: Was the bug related to local snippets, cloud snippets, or neither?
+      options:
+        - Local
+        - Cloud
+        - Not applicable
+    validations:
+      required: true
+
+  - type: dropdown
+    id: signed-in
+    attributes:
+      label: Were you signed in?
+      options:
+        - "Yes"
+        - "No"
+        - Not applicable
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot or recording
+      description: Optional. Drag images or videos into this field, or paste a link.
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Browser console errors
+      description: Optional. If you see errors in the browser console (F12 → Console), paste them here.
+      render: shell

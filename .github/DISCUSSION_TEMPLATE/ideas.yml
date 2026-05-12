@@ -1,0 +1,43 @@
+title: "[Idea]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for CodeCaddy? We'd love to hear it.
+        
+        Ideas posted here are part of the community conversation. They're not committed roadmap items, but they help us understand what users need.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the user problem before the proposed solution.
+      placeholder: "When I'm switching between projects, I lose track of which snippets belong to which project. I can use tags but they get unwieldy at scale."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Your proposed solution
+      description: What would the ideal solution look like? Be as concrete as you can.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional. Other approaches that could solve the same problem.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this to you?
+      options:
+        - "Nice to have"
+        - "Would significantly improve my workflow"
+        - "I'm blocked without this"
+    validations:
+      required: true

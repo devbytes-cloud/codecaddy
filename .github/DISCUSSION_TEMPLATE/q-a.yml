@@ -1,0 +1,30 @@
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for asking a question. Filling out the fields below helps us give you a useful answer faster.
+        
+        **Before posting:** Search existing Discussions; your question may already be answered.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What are you trying to do, figure out, or understand?
+      placeholder: "How do I move snippets between local and cloud storage?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Optional. What approaches have you already attempted?
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Optional. Anything else that might help us answer (browser, OS, screenshots, related links).
