@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🙋 Ask a question
+    url: https://github.com/devbytes-cloud/codecaddy/discussions/categories/q-a
+    about: Have a question about CodeCaddy? Ask in Discussions.
+  - name: 💡 Suggest a feature or idea
+    url: https://github.com/devbytes-cloud/codecaddy/discussions/categories/ideas
+    about: Got an idea? Discuss it with the community.
+  - name: 💳 Account or billing issue
+    url: mailto:support@codecaddy.dev
+    about: Email us directly for billing or account questions.
+  - name: 🔒 Security vulnerability
+    url: https://github.com/devbytes-cloud/codecaddy/security/policy
+    about: Please report security issues privately.
